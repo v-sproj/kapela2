@@ -1,0 +1,27 @@
+{
+  "name": "vite-bootstrap-sass-sharp",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite --open",
+    "build": "vite build --emptyOutDir",
+    "optimize-css": "purgecss --config purgecss.config.js --output dist/assets/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "sass": "^1.68.0",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "vite": "^4.4.9",
+    "vite-plugin-image-optimizer": "^1.1.8"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2"
+  }
+}
