@@ -1,54 +1,118 @@
 <!doctype html>
 <html lang="cs" data-bs-theme="auto">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gleb</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="./js/main.js"></script> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gleb</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="./js/main.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand active" aria-current="page" href="#">GLEB</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="html/biografie.html">BIOGRAFIE</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="html/diskografie.html">DISKOGRAFIE</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="html/galerie.html">GALERIE</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="html/koncerty.html">KONCERTY</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="html/kontakt.html">KONTAKT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-
-    <main> 
-        
-    </main>
-
-    <footer>
-      
-      <div class="footer-text">
-        <p>Vytvořila Valérie Šprojcarová 2024 (Studentský projekt)</p>
-        <a href="html/nic.html">Podmínky použití a ochrana osobních údajů</a>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand active" aria-current="page" href="#">GLEB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="html/biografie.html">BIOGRAFIE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/diskografie.html">DISKOGRAFIE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/galerie.html">GALERIE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/koncerty.html">KONCERTY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/kontakt.html">KONTAKT</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </footer>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="row py-5">
+        <h2 class="pb-5">KONTAKT</h2>
+        <div class="col-xl-6 mb-3">
+          <div class="icons">
+            <a href="https://www.instagram.com/glebzoo/?hl=cs"><i class="fi fi-brands-instagram pe-2"></i></a>
+            <a href="https://www.facebook.com/Gleb821/?locale=cs_CZ"><i class="fi fi-brands-facebook"></i></a>
+          </div>
+          <p>bookingbigboygleb@gmail.com</p>
+        </div>
+        <div class="col-xl-6 mb-3">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Vaše e-mailová adresa</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="vas@email.cz">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Vaše jméno</label>
+            <input type="text" class="form-control" id="exampleFormControlName1" placeholder="Jan Novák">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Váš vzkaz</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-check pb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Souhlasím se zpracováním osobních údajů</label>
+          </div>
+          <button type="submit" class="btn btn-primary col-xl-12">ODESLAT</button>
+        </div>
+
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <section class="row">
+        <div class="column">
+          <div class="logo text-center">
+            <a href="index.html" class="fs-1 text-decoration-none">GLEB</a>
+          </div>
+        </div>
+
+        <div class="column d-flex justify-content-center pt-4">
+          <div class="icons">
+            <a href="https://www.instagram.com/glebzoo/?hl=cs"><i class="fi fi-brands-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/6P55YsIOHmgooCXGQXcSga"><i
+                class="fi fi-brands-spotify px-5"></i></a>
+            <a href="https://www.youtube.com/@BIGBOYGLEB"><i class="fi fi-brands-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="column d-flex justify-content-center pt-4">
+          <a href="html/kontakt.html">Kontakty</a>
+          <a href="html/koncerty.html" class="footer-middle-padding">Koncerty</a>
+          <a href="https://www.glebshop.sk">Merch</a>
+        </div>
+
+      </section>
+
+      <section class="row py-4">
+        <div class="footer-text">
+          <p>Vytvořila Valérie Šprojcarová 2024 (Studentský projekt)</p>
+          <p>Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+          <a href="html/nic.html">Podmínky použití a ochrana osobních údajů</a>
+        </div>
+      </section>
+    </div>
+  </footer>
 
 </body>
+
 </html>

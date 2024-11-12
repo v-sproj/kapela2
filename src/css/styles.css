@@ -5,5 +5,27 @@
 }
 
 .icons a:hover {
-    color: rgb(40, 40, 40); /*dokončit, nějakej cooldown jakoby*/
+    color: rgb(40, 40, 40);
+    /*dokončit, nějakej cooldown jakoby*/
+}
+
+.footer-text p {
+    margin: 2px 0px;
+}
+
+.padding-bottom {
+    margin-bottom: 2px;
+}
+
+#carouselExampleInterval {
+    max-width: 800px;
+}
+
+#carouselExampleInterval .carousel-item img {
+    height: auto;
+    object-fit: cover;
+}
+
+.footer-middle-padding {
+    padding: 0px 100px;
 }
