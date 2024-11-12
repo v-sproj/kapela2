@@ -1,0 +1,9 @@
+.icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.icons a:hover {
+    color: rgb(40, 40, 40); /*dokončit, nějakej cooldown jakoby*/
+}
