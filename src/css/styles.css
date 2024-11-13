@@ -18,7 +18,7 @@
 }
 
 #carouselExampleInterval {
-    max-width: 800px;
+    max-width: 700px;
 }
 
 #carouselExampleInterval .carousel-item img {
@@ -45,4 +45,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.modak {
+    font-family: "Modak";
+}
+
+.big-font {
+    font-size: 95px;
 }
