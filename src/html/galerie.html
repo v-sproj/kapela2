@@ -11,9 +11,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container">
-                <a class="navbar-brand active" aria-current="page" href="../index.html">GLEB</a>
+                <a class="navbar-brand active modak fs-2" aria-current="page" href="../index.html">GLEB</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                             <a class="nav-link" href="diskografie.html">DISKOGRAFIE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galerie.html">GALERIE</a>
+                            <a class="nav-link active" aria-current="page" href="galerie.html">GALERIE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="koncerty.html">KONCERTY</a>
@@ -43,17 +43,111 @@
 
     <main>
         <div class="container">
-            <h2 class="py-5">GALERIE</h2>
+            <h2 class="py-4 modak display-5">GALERIE</h2>
+            <div class="row row-cols-1 row-cols-xl-4 row-cols-md-3 g-2 pb-5 preview">
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://www.fullmoonzine.cz/gleb-30-7-2021-cross-club-praha"
+                        href="../images/galerie.jpg">
+                        <img class="rounded" src="../images/galerie.jpg" />
+                    </a>
+                </div>
 
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://photohruso.sk/portfolio/koncerty/008kon/"
+                        href="../images/galerie2.jpg">
+                        <img class="rounded" src="../images/galerie2.jpg" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://www.crossclub.cz/cs/program/6512-big-boy-gleb-show/"
+                        href="../images/galerie3.jpg">
+                        <img class="rounded" src="../images/galerie3.jpg" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://refresher.cz/119234-Gleb-s-priatelkou-Barbarou-sa-stanu-rodicmi"
+                        href="../images/galerie4.jpg">
+                        <img class="rounded" src="../images/galerie4.jpg" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://www.instagram.com/p/C-DZdn-xYZu/?img_index=1"
+                        href="../images/galerie5.png">
+                        <img class="rounded" src="../images/galerie5.png" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery" data-caption="Zdroj fotky: https://goout.net/cs/gleb/pzhkkuf/"
+                        href="../images/galerie6.jpg">
+                        <img class="rounded" src="../images/galerie6.jpg" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery" data-caption="Zdroj fotky: https://goout.net/cs/gleb/pzhkkuf/"
+                        href="../images/galerie7.jpg">
+                        <img class="rounded" src="../images/galerie7.jpg" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://www.instagram.com/p/C8-EkExinCX/?img_index=4"
+                        href="../images/galerie8.png">
+                        <img class="rounded" src="../images/galerie8.png" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://www.instagram.com/p/C_2kT4iip4q/?img_index=7"
+                        href="../images/galerie9.png">
+                        <img class="rounded" src="../images/galerie9.png" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery" data-caption="Zdroj fotky: https://www.instagram.com/patrik.frustok/"
+                        href="../images/galerie10.png">
+                        <img class="rounded" src="../images/galerie10.png" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery" data-caption="Zdroj fotky: https://goout.net/cs/gleb/pzhkkuf/"
+                        href="../images/gleb-.jpg">
+                        <img class="rounded" src="../images/gleb-.jpg" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a data-fancybox="gallery"
+                        data-caption="Zdroj fotky: https://festivaly.eu/interpreti/rapinbox/2084987"
+                        href="../images/galerie12.jpg">
+                        <img class="rounded" src="../images/galerie12.jpg" />
+                    </a>
+                </div>
+            </div>
         </div>
+
+
     </main>
 
-    <footer>
+    <footer class="pt-5 bg-dark">
         <div class="container">
             <section class="row">
                 <div class="column">
                     <div class="logo text-center">
-                        <a href="../index.html" class="fs-1 text-decoration-none">GLEB</a>
+                        <a href="../index.html" class="text-decoration-none display-3 modak">GLEB</a>
                     </div>
                 </div>
 
@@ -66,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="column d-flex justify-content-center pt-4">
+                <div class="column d-flex justify-content-center py-4">
                     <a href="kontakt.html">Kontakty</a>
                     <a href="koncerty.html" class="footer-middle-padding">Koncerty</a>
                     <a href="https://www.glebshop.sk">Merch</a>
@@ -83,6 +177,7 @@
             </section>
         </div>
     </footer>
+
 </body>
 
 </html>

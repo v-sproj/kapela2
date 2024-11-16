@@ -11,9 +11,9 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand active" aria-current="page" href="../index.html">GLEB</a>
+        <a class="navbar-brand active modak fs-2" aria-current="page" href="../index.html">GLEB</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
               <a class="nav-link" href="koncerty.html">KONCERTY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kontakt.html">KONTAKT</a>
+              <a class="nav-link active" aria-current="page" href="kontakt.html">KONTAKT</a>
             </li>
           </ul>
         </div>
@@ -43,38 +43,41 @@
 
   <main>
     <div class="container">
-      <section class="row py-5">
-        <h2 class="pb-5">KONTAKT</h2>
-        <div class="col-xl-6 mb-3">
-          <div class="icons">
-            <a href="https://www.instagram.com/glebzoo/?hl=cs"><i class="fi fi-brands-instagram pe-2"></i></a>
-            <a href="https://www.facebook.com/Gleb821/?locale=cs_CZ"><i class="fi fi-brands-facebook"></i></a>
-          </div>
-          <p>bookingbigboygleb@gmail.com</p>
-        </div>
-        <div class="col-xl-6 mb-3">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Vaše e-mailová adresa</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="vas@email.cz">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput2" class="form-label">Vaše jméno</label>
-            <input type="text" class="form-control" id="exampleFormControlName1" placeholder="Jan Novák">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Váš vzkaz</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="form-check pb-3">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">Souhlasím se zpracováním osobních údajů</label>
-          </div>
-          <button type="submit" class="btn btn-primary col-xl-12">ODESLAT</button>
-        </div>
-
-
-      </section>
+      <h2 class="py-4 modak display-5">KONTAKT</h2>
     </div>
+    <section class="bg-secondary py-5">
+      <div class="container">
+        <section class="row pb-5">
+          <div class="col-xl-6 mb-3">
+            <div class="icons">
+              <a href="https://www.instagram.com/glebzoo/?hl=cs"><i class="fi fi-brands-instagram pe-2"></i></a>
+              <a href="https://www.facebook.com/Gleb821/?locale=cs_CZ"><i class="fi fi-brands-facebook"></i></a>
+            </div>
+            <p>bookingbigboygleb@gmail.com</p>
+          </div>
+          <div class="col-xl-6 mb-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Vaše e-mailová adresa</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="vas@email.cz">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput2" class="form-label">Vaše jméno</label>
+              <input type="text" class="form-control" id="exampleFormControlName1" placeholder="Jan Novák">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Váš vzkaz</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-check pb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-decoration-underline" for="flexCheckDefault">Souhlasím se zpracováním
+                osobních údajů</label>
+            </div>
+            <button type="submit" class="btn btn-primary col-xl-12">ODESLAT</button>
+          </div>
+        </section>
+      </div>
+    </section>
   </main>
 
   <footer>
