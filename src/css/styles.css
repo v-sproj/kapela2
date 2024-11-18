@@ -1,12 +1,12 @@
 .icons a {
     text-decoration: none;
-    color: black;
+    color: "$primary";
     font-size: 30px;
+    transition-duration: 0.5s;
 }
 
 .icons a:hover {
-    color: rgb(40, 40, 40);
-    /*dokončit, nějakej cooldown jakoby*/
+    color: "$secondary";
 }
 
 .footer-text p {
