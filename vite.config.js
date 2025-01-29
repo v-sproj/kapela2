@@ -1,60 +1,51 @@
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-import { defineConfig } from 'vite';
-
 const path = require('path')
+import fs from 'fs'
 
 
-export default defineConfig(() => {
-    return {
-        root: path.resolve(__dirname, 'src'),
-        build: {
-            outDir: '../dist',
-            rollupOptions: {
-              output: {
-                assetFileNames: (assetInfo) => {
-                  let extType = assetInfo.name.split('.').at(1);
-                  if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-                    extType = 'images';
-                  }
-                  return `assets/${extType}/[name]-[hash][extname]`;
-                },  
-                chunkFileNames: 'assets/js/[name]-[hash].js',
-                entryFileNames: 'assets/js/[name]-[hash].js',
-              },
-            },
-          },
-        server: {
-            port: 8080
-        },
-        plugins: [
-            ViteImageOptimizer({
-                /* pass your config */
-                jpeg: {
-                    quality: 70,
-                    mozjpeg: true
-                },
-                jpg: {
-                    quality: 70,
-                    mozjpeg: true
-                },
-                png: {
-                    quality: 70,
-                    compressionLevel: 7,
-                    palette: true
-                },
-                svg: {
-                    quality: 70
-                },
-                tiff: {
-                    quality: 70
-                },
-                webp: {
-                    quality: 70
-                }
-            }),
-        ],
-    };
-});
+function getHtmlEntryFiles(srcDir) {
+	const entry = {};
 
+	function traverseDir(currentDir) {
+	  const files = fs.readdirSync(currentDir);
 
+	  files.forEach((file) => {
+		const filePath = path.join(currentDir, file);
+		const isDirectory = fs.statSync(filePath).isDirectory();
 
+		if (isDirectory) {
+		  // If it's a directory, recursively traverse it
+		  traverseDir(filePath);
+		} else if (path.extname(file) === '.html') {
+		  // If it's an HTML file, add it to the entry object
+		  const name = path.relative(srcDir, filePath).replace(/\..*$/, '');
+		  entry[name] = filePath;
+		}
+	  });
+	}
+
+	traverseDir(srcDir);
+
+	return entry;
+}
+
+export default {
+    base: '',
+    root: 'src',
+	build: {
+		rollupOptions: {
+			input: getHtmlEntryFiles('src')
+		},
+		outDir: '../dist',
+		emptyOutDir: true
+	},
+	optimizeDeps: {
+		entries: 'src/**/*{.html,.css,.js}'
+	},
+    // root: path.resolve(__dirname, 'src'),
+    // build: {
+    //     outDir: '../dist'
+    // },
+    server: {
+        port: 8080
+    }
+}
